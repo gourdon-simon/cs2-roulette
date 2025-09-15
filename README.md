@@ -3,7 +3,7 @@
 ## 1. Setup
 To get the application up and running unzip the folder and simply run the executable file.
 
-Two endpoints will then be open:
+Two web pages will then be accessible:
 - http://localhost:8080 -> represents the UI for the clients that will receive the randomized instructions
 - http://localhost:8080/session-control.html => controls the session for the application run
 
