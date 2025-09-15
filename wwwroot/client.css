@@ -1,0 +1,170 @@
+/* Template CSS for cs-strat-randomizer */
+
+:root {
+    --primary-color: #405556;
+    --secondary-color: #263a3a;
+    --accent-color: #627b7c;
+    --font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+body {
+    color: #222;
+    font-family: var(--font-family);
+
+    background: var(--secondary-color);
+    
+    border: 5px solid var(--primary-color);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    box-sizing: border-box;
+
+    min-height: 100vh;
+
+    margin: 0;
+    padding: 0;
+}
+
+#waitingScreen{
+    color: var(--accent-color);
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    width: 100vw;
+    height: 100vh;
+}
+
+#waitingScreen > * {
+    margin: max(2.5%, 20px) 10%;
+}
+
+#waitingScreen button{
+    background-color: var(--secondary-color);
+    color: var(--accent-color);
+    font-family: var(--font-family);
+    font-size: 1.75rem;
+    font-weight: 700;
+
+    border: 1px solid var(--primary-color);
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(64, 85, 86, 0.15);
+    cursor: pointer;
+    transition: background-color 0.5s, transform 0.25s;
+
+    padding: 2% 4%;
+}
+
+#waitingScreen button:hover {
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+    transform: scale(1.1);
+}
+
+#waitingScreen .post{
+    display: none;
+}
+
+#WEAPON{
+    background: url("./assets/WeaponPickBackground.jpg");
+
+    display: none;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+
+    max-width: 1280px;
+    max-height: 600px;
+}
+
+#weaponAnimation {
+    display: block;
+
+    max-width: 100%;
+    max-height: 100%;
+    height: auto;
+
+}
+
+#weaponPicked {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    position: absolute;
+
+    max-width: 100%;
+    max-height: 100%;
+
+    opacity: 0;
+    transition: opacity 3s;
+}
+
+#weaponPickedTitle{
+    text-align: center;
+
+    color: whitesmoke;
+    font-size: 32px;
+    text-shadow: 0 0 10px var(--secondary-color);
+
+    margin: 15px;
+}
+
+#weaponPickedImg{
+    background: #F5F5F5;
+    background: radial-gradient(ellipse,rgba(185, 205, 215, 1) 0, rgba(245, 245, 245, 0) 71%);
+
+    object-fit: contain;
+    width: 70%;
+
+    margin: 15px;
+}
+
+/* ------------------------------------------------------------------------------- */
+
+.separator {
+    background-color: var(--primary-color);
+
+
+    position: relative;
+
+    width: 100%;
+    height: 5px;
+
+}
+
+/* ------------------------------------------------------------------------------- */
+
+#MISSION {
+    color: var(--accent-color);
+    background-color: var(--secondary-color);
+
+    border: 3px solid var(--primary-color);
+    border-radius: 10px;
+
+    display: none;
+
+    padding: clamp(10px, 1%, 20px);
+    margin: clamp(10px, 1%, 20px);
+}
+
+#missionTitle {
+    font-size: xx-large;
+
+    margin: clamp(10px, 1%, 20px);
+}
+
+#missionDescription {
+    font-size: x-large;
+    font-weight: 450;
+    letter-spacing: 1px;
+
+    margin: clamp(10px, 1%, 20px);
+}

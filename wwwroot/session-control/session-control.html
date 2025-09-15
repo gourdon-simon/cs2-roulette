@@ -1,0 +1,69 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>CSR - Session settings</title>
+    <script src="./session-control.js?v=1" defer></script>
+    <link rel="stylesheet" href="./session-control.css?v=1">
+</head>
+<body>
+    <section id="sessionCreator">
+        <div id="randomizationCategory">
+            <h2>Pick your desired mode :</h2>
+            <div class="options">
+                <div class="option weapons">
+                    <h4>WEAPON</h4>
+                    <p>Every round, each player will need to buy a randomly picked weapon and deal with it fdp</p>
+                </div>
+                <div class="option mission">
+                    <h4>MISSION</h4>
+                    <p>Every round, the players will have to abide by a rule or pay the price 😈</p>
+                </div>
+                <div class="option both">
+                    <h4>BOTH</h4>
+                    <p>For extra freakiness 😏</p>
+                </div>
+            </div>
+        </div>
+        <div id="weaponSelector">
+            <h1>Click to unselect weapons</h1>
+            <div id="weaponGrid">
+            </div>
+        </div>
+        <div id="startSection">
+            <button id="sendButton">Validate settings and start the session</button>
+            <video id="easterEgg" src="../assets/EasterEgg.mp4"></video>
+        </div>
+    </section>
+    <section id="randomizeController">
+        <div id="roundType">
+            <h2>Which type of round are you playing ?</h2>
+            <div id="types">
+                <div id="pistol" class="type">
+                    <h3>Pistol</h3>
+                </div>
+                <div id="halfbuy" class="type">
+                    <h3>Half Buy</h3>
+                </div>
+                <div id="fullbuy" class="type">
+                    <h3>Full Buy</h3>
+                </div>
+            </div>
+        </div>
+        <div id="sideType">
+            <h2>Which side are you playing ?</h2>
+            <div id="sideContainer">
+                <div id="ct" class="side">
+                    <h3>Counter-Terrorist</h3>
+                    <video class="background" src="../assets/CT.mp4" autoplay loop muted></video>
+                </div>
+                <div id="t" class="side">
+                    <h3>Terrorist</h3>
+                    <video class="background" src="../assets/T.mp4" autoplay loop muted></video>
+                </div>
+            </div>
+        </div>
+        <button id="sendChallengeButton">SEND CHALLENGE</button>
+    </section>
+</body>
+</html>

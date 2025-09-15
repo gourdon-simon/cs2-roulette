@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>CS Randomizer</title>
+
+    <script src="lib/microsoft/signalr/dist/browser/signalr.js"></script>
+    <link rel="stylesheet" href="client.css?v=1" />
+    <script src="./client.js?v=1" defer></script>
+</head>
+<body>
+    <div id="waitingScreen">
+        <h1 class="pre">Press the button when you are ready to start :</h1>
+        <button id="readyButton" class="pre">Ready</button>
+        <h1 class="post">Waiting for the first round...</h1>
+    </div>
+    <section id="WEAPON" class="both">
+        <video id="weaponAnimation" src="./assets/weaponPick.mp4"></video>
+        <div id="weaponPicked">
+            <img id="weaponPickedImg" src="./assets/placeholder.jpg">
+            <h2 id="weaponPickedTitle">Ta gueule xDdDD</h2>
+        </div>
+    </section>
+    <span class="separator"></span>
+    <section id="MISSION">
+        <h2 id="missionTitle">Mission :</h2>
+        <p id="missionDescription">One player is the president and must be protected at all costs. All other players must follow the president and protect them. If the president dies, the round is lost (kill yourselves).</p>
+    </section>
+</body>
+</html>
