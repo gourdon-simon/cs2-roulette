@@ -1,4 +1,4 @@
-﻿var connection = new signalR.HubConnectionBuilder().withUrl("http://localhost:8080/sessionHub").build();
+﻿var connection = new signalR.HubConnectionBuilder().withUrl("https://cs2-roulette.sgpp.uk/sessionHub").build();
 
 let waitingSection = document.getElementById("waitingScreen");
 let readyButton = document.getElementById("readyButton");
